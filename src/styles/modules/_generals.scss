@@ -1,0 +1,69 @@
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.line {
+    background: $line-color;
+    height: 1px;
+    width: 100%;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-black-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: .35;
+
+    border-radius: inherit;
+    transition: $transition;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.desktop-d-none {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .responsive-d-none {
+        display: none !important;
+    }
+
+    .desktop-d-none {
+        display: inline-block;
+    }
+}
+
+

@@ -1,0 +1,52 @@
+.font-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4.2vw, 45px);
+    font-weight: 900;
+}
+
+.font-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 2.6vw, 3px);
+    font-weight: 900;
+}
+
+.font-text {
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.font-100 {
+    font-size: clamp(15px, 1.4vw, 25px);
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.font-200 {
+    font-size: clamp(20px, 1.6vw, 30px);
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-orange {
+    color: $orange;
+}
+
+.color-black {
+    color: $black;
+}
+
+.color-line-color {
+    color: $line-color;
+}
+
+.suspensive {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+

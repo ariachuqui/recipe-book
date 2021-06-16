@@ -1,0 +1,145 @@
+//RecipeShowcase
+
+.recipe__showcase {
+    width: 100%;
+    max-width: 800px;
+    height: 38vh;
+    min-height: 280px;
+
+    margin: 0 auto 3rem;
+}
+
+.recipe__showcase-img {
+    border-radius: 0 0 30px 30px;
+}
+
+.recipe__showcase-title-info  {
+    width: 90%;
+    background: white;
+    padding: 1rem 0;
+    border-radius: 20px;
+    bottom: -40px;
+    box-shadow: $shadow-1;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.recipe__showcase-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+//Recipe Screen
+.recipe__option {
+    width: 50%;
+    padding: 1.3em 0;
+    color: $lighten-orange;
+
+    cursor: pointer;
+
+    h2 {
+        transition: $transition;
+    }
+
+    &:hover h2 {
+        color: $orange;
+    }
+}
+
+.recipe__line {
+    width: 50%;
+    height: 2px;
+    background: $darken-orange;
+    bottom: 0;
+    right: 50%;
+
+    transition: $transition;
+}
+
+.recipe__line-right {
+    right: 0%;
+
+    transition: $transition;
+}
+
+.recipe__title {
+    margin: 2rem auto;
+}
+
+.recipe__section-is {
+    overflow: hidden;
+}
+
+.recipe__carousel {
+    display: flex;
+    width: 200%;
+    transition: $transition;
+    margin-left: 0;
+}
+
+.recipe_show-steps {
+    margin-left: -100%;
+}
+
+//Recipe Ingridients
+.recipe__ingredients-portions {
+    margin: 2rem auto;
+    color: $black;
+
+    i {
+        display: inline-block;
+        font-size: clamp(26px, 2.6vw, 3px);
+        transition: $transition;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: $shadow-1;
+            transform: translateY(-2px);
+        }
+    }
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+//Recipe Ingridients and Recipe Steps
+.recipe_box {
+    margin: 1rem auto;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    box-shadow: $shadow-1;
+}
+
+//Recipe Steps
+.recipe__container {
+    margin: 2rem auto;
+
+    .lightbulb {
+        color: #FEE60E;
+        font-size: clamp(26px, 2.6vw, 3px);
+    }
+}
+
+.recipe_box {
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .recipe__showcase-img {
+        border-radius: 20px;
+    }
+
+    .recipe__carousel {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .recipe_show-steps {
+        margin-left: 0;
+    }
+}

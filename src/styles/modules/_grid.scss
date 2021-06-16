@@ -1,0 +1,33 @@
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.flex-alignCenter {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-self-end {
+    display: flex;
+    justify-self: end;
+}

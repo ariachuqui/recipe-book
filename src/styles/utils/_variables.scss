@@ -1,0 +1,13 @@
+//Colors
+$orange: #E76F51; 
+$lighten-orange: lighten($orange, $amount: 4);
+$darken-orange: darken($orange, $amount: 10);
+$black: #464646;
+$gray: #E5E5E5;
+$line-color: #BABABA;
+
+//Transition
+$transition: all .3s ease;
+
+//shadows
+$shadow-1 : rgba(0, 0, 0, 0.24) 0px 3px 8px;

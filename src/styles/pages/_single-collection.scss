@@ -1,0 +1,44 @@
+.single-collection__recipe {
+    background: $gray;
+    border-radius: 10px;
+    margin-bottom: 2em;
+
+    box-shadow: $shadow-1;
+    cursor: pointer;
+
+    &:hover {
+        .background-black-img {
+            opacity: 0;
+        }
+
+        .color-orange {
+            color: $lighten-orange;
+        }
+    }
+}
+
+.single-collection__info {
+    padding: .5em 1.3em;
+    gap: 0;
+}
+
+.single-collection__p {
+    width: 20%;
+    text-align: center;
+
+    i {
+        font-size: clamp(16px, 1.5vw, 26px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .single-collection__recipe {
+        width: 48%;
+    }
+
+    .single-collection__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
