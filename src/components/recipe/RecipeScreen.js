@@ -34,7 +34,7 @@ export const RecipeScreen = () => {
                 <div className={`recipe__line absolute ${ showSteps && 'recipe__line-right' }`}></div>
             </section>
 
-            <section className='recipe__section-is width-100'>
+            <section className='overflow-hidden width-100'>
                 <div className={`recipe__carousel ${ showSteps && 'recipe_show-steps' }`}>
                     <h2 className="recipe__title font-title color-orange desktop-d-none">Ingredients</h2>
                     <RecipeIngredients />

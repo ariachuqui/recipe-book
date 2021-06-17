@@ -7,6 +7,7 @@ import {
   
 import { LoginScreen } from '../components/auth/LoginScreen';
 import { RegisterScreen } from '../components/auth/RegisterScreen';
+import { EditScreen } from '../components/edit/EditScreen';
 import { DashboardRoutes } from './DashboardRoutes';
 
 export const AppRouter = () => {
@@ -17,6 +18,8 @@ export const AppRouter = () => {
 
                     <Route exact path="/auth/login" component={LoginScreen} />
                     <Route exact path="/auth/register" component={RegisterScreen} />
+
+                    <Route exact path="/edit" component={EditScreen} />
 
                     <Route path="/" component={DashboardRoutes} />
 
