@@ -21,17 +21,19 @@ export const RecipeIngredients = () => {
         <div className="width-100">
 
             <div className="recipe__ingredients-portions flex-center">
+
                 <i 
-                    className="fas fa-plus-square" 
-                    onClick={ sumPortion }
+                    className={`fas fa-minus-square ${(portionNumber === 1) && 'btn-disable'}`} 
+                    onClick={ restPortion }
                 ></i>
 
                 <h2 className="font-subtitle">{portionNumber} porciones</h2>
                 
                 <i 
-                    className={`fas fa-minus-square ${(portionNumber === 1) && 'btn-disable'}`} 
-                    onClick={ restPortion }
+                    className="fas fa-plus-square" 
+                    onClick={ sumPortion }
                 ></i>
+                
             </div>
         
 

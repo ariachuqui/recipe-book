@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { logout } from '../../actions/auth'
 
 export const Sidebar = () => {
+
+    const dispatch = useDispatch();
 
     const [showSidebar, setShowSidebar] = useState(false)
     
     const hideSidebar = () => {
         setShowSidebar(false)
     }
+
+    const handleLogout = () => dispatch( logout() )
 
     return (
         <aside className={`sidebar ${showSidebar && 'show-sidebar'}`}>
@@ -21,7 +27,7 @@ export const Sidebar = () => {
                 <h2 
                     className="sidebar__title font-title color-orange"
                 >
-                    Configración
+                    Configuración
                 </h2>
                 
             </nav>
@@ -90,7 +96,10 @@ export const Sidebar = () => {
             <div className="line"></div>
 
             <section className="sidebar__section">
-                <div className="sidebar-selection">
+                <div 
+                    className="sidebar-selection"
+                    onClick={handleLogout}
+                >
                     <div className="container flex-alignCenter">
                         <div className="sidebar__circle flex-center">
                             <i className="fas fa-sign-out-alt color-orange"></i>

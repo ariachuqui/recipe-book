@@ -4,8 +4,10 @@ import { data } from '../../data/data';
 
 export const Nav = () => {
 
-    const main = false;
-    const recipeScreen = true;
+    const main = true;
+    const recipeScreen = false;
+
+    const navState = 'Collection';
 
     const {name_user, collections} = data[0];
 

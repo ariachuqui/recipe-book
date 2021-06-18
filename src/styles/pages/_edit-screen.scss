@@ -1,13 +1,17 @@
 //EditScreen
 .edit-screen {
-    padding: .5rem 0;
+    padding: 1rem 0;
+
+    .line {
+        margin: 1.8rem auto .8rem;
+    }
 }
 
 .edit-screen__pagination {
     .btn {
         width: 45%;
         padding: .8rem ;
-        margin: 1.4rem 0;
+        margin: .5rem 0;
         text-align: center;
     }
 }
@@ -17,4 +21,88 @@
     width: 500%;
     transition: $transition;
     margin-left: 0;
+}
+
+//EditSection - generals styles
+
+.edit-screen .edit-screen__section  {
+    & > * + * {
+        margin-top: 2rem;
+    }
+
+    h2 {
+        margin-top: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.edit-screen .edit-screen__form {
+    box-shadow: $shadow-1;
+    padding: 2rem .5rem ;
+    border-radius: 7px;
+}
+
+.edit-screen .edit-screen__section-collection {
+    .background-black-img {
+        opacity: .6;
+    }
+
+    .collection__img {
+        border: 3px solid transparent;
+    }
+
+    &:hover {
+        
+        .collection__img {
+            border: 3px solid $orange;
+            background: $orange;
+        }
+        
+        .background-black-img {
+            opacity: .5;
+        }
+
+        .collection-name {
+            color: $orange;
+        }
+
+        .edit-screen__check {
+            display: block;
+        } 
+    }
+}
+
+.edit-screen .edit-screen__section-active { 
+    .collection__img {
+        border: 3px solid $orange;
+        background: $orange;
+    }
+    
+    .background-black-img {
+        opacity: .5;
+    }
+
+    .collection-name {
+        color: $orange;
+    }
+
+    .edit-screen__check {
+        display: block;
+    } 
+}
+
+.edit-screen__check {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $orange;
+    transition: $transition;
+    display: none;
+
+    i {
+        font-size: clamp(38px, 4.5vw, 55px);
+    }
 }

@@ -1,7 +1,27 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
 
+import { startLogin } from '../../actions/auth';
+import { useForm } from '../../hooks/useForm';
+
+
 export const LoginScreen = () => {
+
+    const dispatch = useDispatch();
+
+    const [ { email, password }, handleInputChange ] = useForm({
+        email: 'test@test.com',
+        password: '123456'
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        dispatch( startLogin( email, password ) );
+    }
+
+
     return (
         <main className="auth">
             <section className="auth__img">
@@ -42,13 +62,19 @@ export const LoginScreen = () => {
                     <div className="line"></div>
                 </div>
             
-                <form className="form">
+                <form 
+                    className="form"
+                    onSubmit={ handleSubmit }
+                >
 
                    <div className="input-container relative">
                         <input 
                             className="input absolute" 
                             type="text"
                             id="email" 
+                            name="email"
+                            value={ email } 
+                            onChange={ handleInputChange }
                             required
                             autoComplete = 'off'
                         />
@@ -68,6 +94,9 @@ export const LoginScreen = () => {
                             className="input absolute" 
                             type="password"
                             id="password" 
+                            name="password"
+                            value={ password }
+                            onChange={ handleInputChange }
                             required
                             autoComplete = 'off'
                         />
@@ -82,7 +111,10 @@ export const LoginScreen = () => {
                         <span className="form__line absolute"></span>
                     </div>
 
-                    <button className="btn btn-orange width-100">Login</button>
+                    <button 
+                        className="btn btn-orange width-100"
+                        type="submit"
+                    >Login</button>
                 </form>
             </section>
         </main>
