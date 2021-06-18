@@ -1,9 +1,11 @@
 import React from 'react'
+
 import { data } from '../data/data';
 
 export const SingleCollectionScreen = () => {
 
     const {name, recetas} = data[0].collections[0];
+
 
     return (
         <main className="collections-main width-100">
@@ -30,11 +32,11 @@ export const SingleCollectionScreen = () => {
                                             {name} 
                                         </p>
                                         <div className="single-collection__info font-text flex-between color-black">
-                                            <p className="single-collection__p font-text"> <i class="fas fa-carrot color-orange"></i> { `${ingredients.length}` }</p>
+                                            <p className="single-collection__p font-text"> <i className="fas fa-carrot color-orange"></i> { `${ingredients.length}` }</p>
                                             <p className="single-collection__p font-text">-</p>
-                                            <p className="single-collection__p font-text"><i class="far fa-clock color-orange"></i> { time }</p>
+                                            <p className="single-collection__p font-text"><i className="far fa-clock color-orange"></i> { time }</p>
                                             <p className="single-collection__p font-text">-</p>
-                                            <p className="single-collection__p font-text"><i class="fas fa-rocket color-orange"></i> { level }</p>
+                                            <p className="single-collection__p font-text"><i className="fas fa-rocket color-orange"></i> { level }</p>
                                         </div>
                                     </figcaption>
                                 </figure>

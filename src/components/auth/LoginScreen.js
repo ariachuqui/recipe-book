@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
 
@@ -25,7 +24,7 @@ export const LoginScreen = () => {
     return (
         <main className="auth">
             <section className="auth__img">
-                <img className="img" src="/images/section-login.jpeg" alt="food image" />
+                <img className="img" src="/images/section-login.jpeg" alt="food" />
             </section>
             <section className="auth__container container">
                 <div className="auth__container__title text-center">

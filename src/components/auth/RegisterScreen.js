@@ -6,7 +6,7 @@ export const RegisterScreen = () => {
         <div>
             <main className="auth">
             <section className="auth__img">
-                <img className="img" src="/images/section-register.jpeg" alt="food image" />
+                <img className="img" src="/images/section-register.jpeg" alt="food" />
             </section>
             <section className="auth__container container">
                 <div className="auth__container__title text-center">

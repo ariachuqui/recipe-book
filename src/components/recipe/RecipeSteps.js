@@ -36,7 +36,7 @@ export const RecipeSteps = () => {
                             className="recipe_box container"
                             key={ i }
                         >
-                            <i class="lightbulb far fa-lightbulb"></i>
+                            <i className="lightbulb far fa-lightbulb"></i>
                             
                             <p className="font-200">{ paragraph }</p>
                         </div>

@@ -27,7 +27,7 @@ export const EditColecctions = () => {
                                         />
 
                                         <div className="edit-screen__check absolute">
-                                            <i class="fas fa-check"></i>
+                                            <i className="fas fa-check"></i>
                                         </div>
                                     </div>
                                     <figcaption className="collection-name font-text color-black text-center">

@@ -8,7 +8,6 @@ export const RecipeScreen = () => {
 
     const [showSteps, setShowSteps] = useState( false )
 
-
     return (
         <main className="recipe__main width-100">
             <RecipeShowcase />

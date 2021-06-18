@@ -21,7 +21,7 @@ export const Sidebar = () => {
                     className="sidebar__circle flex-center"
                     onClick={ hideSidebar }
                 >
-                    <i class="fas fa-chevron-left color-orange"></i>
+                    <i className="fas fa-chevron-left color-orange"></i>
                 </div>
 
                 <h2 

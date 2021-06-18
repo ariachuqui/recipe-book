@@ -19,7 +19,7 @@ export const EditAdvice = () => {
                                 className="recipe_box"
                                 key={ i }
                             >
-                                <i class="lightbulb far fa-lightbulb"></i>
+                                <i className="lightbulb far fa-lightbulb"></i>
                                 
                                 <p className="font-200">{ paragraph }</p>
                             </div>
